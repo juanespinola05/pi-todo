@@ -5,9 +5,5 @@ import svgrPlugin from 'vite-plugin-svgr'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgrPlugin({ svgrOptions: { icon: true } })],
-  server: {
-    cors: {
-      origin: 'file://'
-    }
-  }
+  base: '/pi-todo/'
 })
