@@ -1,0 +1,40 @@
+:root {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --ff: 'Meta Pro', Helvetica, sans-serif;
+  --blue: #1e2133;
+  --lightblue: #0091cc;
+  --white: #ffffff;
+
+  min-height: 100vh;
+
+  font-family: var(--ff);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--blue);
+  background-repeat: no-repeat;
+}
+
+#root {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+.no-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}

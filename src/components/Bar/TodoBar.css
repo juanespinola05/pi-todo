@@ -1,0 +1,76 @@
+.toolbar {
+  width: 100%;
+  height: 70px;
+  padding: 10px 30px;
+  background-color: var(--white);
+
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .toolbar {
+    width: 96%;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+.toolbar__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar__filter-container {
+  width: 72px;
+  border: none;
+  display: flex;
+  gap: 5px;
+}
+
+.toolbar__filter-container_label {
+  cursor: pointer;
+}
+.toolbar__filter-container_input {
+  display: none;
+}
+
+.filter-button {
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  color: gray;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.toolbar__filter-container_input:checked ~ label .filter-button {
+  background-color: #ccc;
+  color: #fff;
+}
+.toolbar__filter-container_input:checked ~ label .todoicon-container svg {
+  fill: var(--lightblue);
+}
+
+.toolbar__categories-container {
+  width: 150px;
+}
+
+.toolbar__clearbutton {
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: var(--lightblue);
+  color: #fff;
+}

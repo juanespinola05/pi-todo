@@ -1,0 +1,13 @@
+.todolistContainer {
+  height: calc(100vh - 200px);
+  /* max-height: 500px; */
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0px -31px 27px -24px rgba(129, 125, 125, 0.75);
+  -moz-box-shadow: inset 0px -31px 27px -24px rgba(129, 125, 125, 0.75);
+  box-shadow: inset 0px -31px 27px -24px rgba(129, 125, 125, 0.75);
+}
